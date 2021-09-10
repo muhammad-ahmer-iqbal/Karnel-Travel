@@ -1,0 +1,64 @@
+﻿@model Karnel_Travel_Project.Models.logIn
+
+@{
+    ViewBag.Title = "Sign In";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    #mySignin {
+        border-bottom: 2px solid white;
+        transition: ease-in-out 0.3s;
+    }
+</style>
+
+<br />
+
+<section class="form-signin my-auto">
+    <div class="container">
+        <div class="formHeading">
+            <h2 class="text-center display-1">Sign in to your account</h2>
+        </div>
+        <hr />
+        <div class="formSection my-5 mx-auto w-50">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                <form>
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group row">
+                            @Html.LabelFor(model => model.u_id, "User ID", htmlAttributes: new { @class = "col-md-4 col-form-label text-dark h5" })
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.u_id, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.u_id, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            @Html.LabelFor(model => model.u_password, "User Password", htmlAttributes: new { @class = "col-md-4 col-form-label text-dark h5" })
+                            <div class="col-md-8">
+                                @Html.PasswordFor(model => model.u_password, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.u_password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <input class="btn btn-outline-dark btn-block btn-lg" type="submit" value="Sign in" />
+                </form>
+                <br>
+                <div class="text-center">
+                    <a href="#" class="text-danger h6">Forgotten password?</a>
+                </div>
+
+                <hr>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck3">
+                    <label class="form-check-label" for="invalidCheck3">Remember Me</label>
+                </div>
+                <div class="text-left">
+                    Don't have a account, <a href="~/Default/SignUp" class="text-primary">Create an account!</a>
+                </div>
+            }
+        </div>
+    </div>
+</section>

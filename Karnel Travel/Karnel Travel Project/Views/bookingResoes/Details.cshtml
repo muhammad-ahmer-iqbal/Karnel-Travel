@@ -1,0 +1,83 @@
+﻿@model Karnel_Travel_Project.bookingReso
+
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<style>
+    #myBreso {
+        font-weight: bold;
+    }
+
+    #booking {
+        border-bottom: 1px solid white;
+    }
+</style>
+
+<h2>Resort Booking Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.breso_departure)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.breso_departure)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.breso_arrival)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.breso_arrival)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.breso_guests)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.breso_guests)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.breso_rooms)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.breso_rooms)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.breso_contactNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.breso_contactNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.userDetail.u_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userDetail.u_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.resort.reso_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.resort.reso_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.breso_id }, new { @class = "btn btn-dark btn-sm" }) |
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-light btn-sm" })
+</p>

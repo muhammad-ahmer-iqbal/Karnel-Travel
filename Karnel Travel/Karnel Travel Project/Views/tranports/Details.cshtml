@@ -1,0 +1,75 @@
+﻿@model Karnel_Travel_Project.tranport
+
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<style>
+    #myTran {
+        font-weight: bold;
+    }
+
+    #info {
+        border-bottom: 1px solid white;
+    }
+</style>
+
+<h2>Transport Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tran_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tran_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tran_country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tran_country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tran_charges)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tran_charges)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tran_seatAvailable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tran_seatAvailable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tran_description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tran_description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tran_img)
+        </dt>
+
+        <dd>
+            <img src="@Url.Content(Model.tran_img)" alt="img" width="100" class="img-fluid" />
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.tran_id }, new { @class = "btn btn-dark btn-sm" }) |
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-light btn-sm" })
+</p>

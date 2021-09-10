@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="karnelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="adminDetail">
+    <Key>
+      <PropertyRef Name="ad_id" />
+    </Key>
+    <Property Name="ad_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ad_password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bookingHot">
+    <Key>
+      <PropertyRef Name="bhot_id" />
+    </Key>
+    <Property Name="bhot_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="bhot_cust_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="bhot_name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="bhot_departure" Type="date" Nullable="false" />
+    <Property Name="bhot_arrival" Type="date" Nullable="false" />
+    <Property Name="bhot_guests" Type="int" Nullable="false" />
+    <Property Name="bhot_rooms" Type="int" Nullable="false" />
+    <Property Name="bhot_contactNo" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bookingReso">
+    <Key>
+      <PropertyRef Name="breso_id" />
+    </Key>
+    <Property Name="breso_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="breso_cust_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="breso_name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="breso_departure" Type="date" Nullable="false" />
+    <Property Name="breso_arrival" Type="date" Nullable="false" />
+    <Property Name="breso_guests" Type="int" Nullable="false" />
+    <Property Name="breso_rooms" Type="int" Nullable="false" />
+    <Property Name="breso_contactNo" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bookingTran">
+    <Key>
+      <PropertyRef Name="btran_id" />
+    </Key>
+    <Property Name="btran_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="btran_cust_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="btran_name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="btran_departure" Type="date" Nullable="false" />
+    <Property Name="btran_arrival" Type="date" Nullable="false" />
+    <Property Name="btran_guests" Type="int" Nullable="false" />
+    <Property Name="btran_seats" Type="int" Nullable="false" />
+    <Property Name="btran_contactNo" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="contact">
+    <Key>
+      <PropertyRef Name="cont_id" />
+    </Key>
+    <Property Name="cont_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="cont_email" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="cont_formType" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="cont_dateTime" Type="datetime" Nullable="false" />
+    <Property Name="cont_message" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="cont_name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="cust_id" />
+    </Key>
+    <Property Name="cust_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="cust_name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="cust_contactNo" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="cust_email" Type="varchar" MaxLength="20" />
+    <Property Name="cust_nic" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="cust_u_id" Type="varchar" MaxLength="20" />
+    <Property Name="cust_u_password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="hotel">
+    <Key>
+      <PropertyRef Name="hot_id" />
+    </Key>
+    <Property Name="hot_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="hot_name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="hot_country" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="hot_charges" Type="money" Nullable="false" />
+    <Property Name="hot_roomAvailable" Type="int" Nullable="false" />
+    <Property Name="hot_rating" Type="int" />
+    <Property Name="hot_description" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="hot_img" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="resort">
+    <Key>
+      <PropertyRef Name="reso_id" />
+    </Key>
+    <Property Name="reso_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="reso_name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="reso_country" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="reso_charges" Type="money" Nullable="false" />
+    <Property Name="reso_roomAvailable" Type="int" Nullable="false" />
+    <Property Name="reso_rating" Type="int" />
+    <Property Name="reso_description" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="reso_img" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="restaurant">
+    <Key>
+      <PropertyRef Name="rest_id" />
+    </Key>
+    <Property Name="rest_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="rest_name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="rest_country" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="rest_charges" Type="money" Nullable="false" />
+    <Property Name="rest_rating" Type="int" />
+    <Property Name="rest_description" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="rest_img" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tranport">
+    <Key>
+      <PropertyRef Name="tran_id" />
+    </Key>
+    <Property Name="tran_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="tran_name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="tran_country" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="tran_charges" Type="money" Nullable="false" />
+    <Property Name="tran_seatAvailable" Type="int" Nullable="false" />
+    <Property Name="tran_description" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="tran_img" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="userDetail">
+    <Key>
+      <PropertyRef Name="u_id" />
+    </Key>
+    <Property Name="u_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="u_password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="u_role" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__bookingHo__bhot___3B75D760">
+    <End Role="userDetail" Type="Self.userDetail" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="bookingHot" Type="Self.bookingHot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="userDetail">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="bookingHot">
+        <PropertyRef Name="bhot_cust_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bookingRe__breso__3F466844">
+    <End Role="userDetail" Type="Self.userDetail" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="bookingReso" Type="Self.bookingReso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="userDetail">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="bookingReso">
+        <PropertyRef Name="breso_cust_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bookingRe__breso__403A8C7D">
+    <End Role="resort" Type="Self.resort" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="bookingReso" Type="Self.bookingReso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="resort">
+        <PropertyRef Name="reso_id" />
+      </Principal>
+      <Dependent Role="bookingReso">
+        <PropertyRef Name="breso_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bookingTr__btran__38996AB5">
+    <End Role="tranport" Type="Self.tranport" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="bookingTran" Type="Self.bookingTran" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tranport">
+        <PropertyRef Name="tran_id" />
+      </Principal>
+      <Dependent Role="bookingTran">
+        <PropertyRef Name="btran_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bookingHot_hotel">
+    <End Role="hotel" Type="Self.hotel" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="bookingHot" Type="Self.bookingHot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hotel">
+        <PropertyRef Name="hot_id" />
+      </Principal>
+      <Dependent Role="bookingHot">
+        <PropertyRef Name="bhot_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bookingTran_userDetail">
+    <End Role="userDetail" Type="Self.userDetail" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="bookingTran" Type="Self.bookingTran" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="userDetail">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="bookingTran">
+        <PropertyRef Name="btran_cust_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="karnelModelStoreContainer">
+    <EntitySet Name="adminDetail" EntityType="Self.adminDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bookingHot" EntityType="Self.bookingHot" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bookingReso" EntityType="Self.bookingReso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bookingTran" EntityType="Self.bookingTran" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="contact" EntityType="Self.contact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="customer" EntityType="Self.customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="hotel" EntityType="Self.hotel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="resort" EntityType="Self.resort" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="restaurant" EntityType="Self.restaurant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tranport" EntityType="Self.tranport" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="userDetail" EntityType="Self.userDetail" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__bookingHo__bhot___3B75D760" Association="Self.FK__bookingHo__bhot___3B75D760">
+      <End Role="userDetail" EntitySet="userDetail" />
+      <End Role="bookingHot" EntitySet="bookingHot" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bookingRe__breso__3F466844" Association="Self.FK__bookingRe__breso__3F466844">
+      <End Role="userDetail" EntitySet="userDetail" />
+      <End Role="bookingReso" EntitySet="bookingReso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bookingRe__breso__403A8C7D" Association="Self.FK__bookingRe__breso__403A8C7D">
+      <End Role="resort" EntitySet="resort" />
+      <End Role="bookingReso" EntitySet="bookingReso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bookingTr__btran__38996AB5" Association="Self.FK__bookingTr__btran__38996AB5">
+      <End Role="tranport" EntitySet="tranport" />
+      <End Role="bookingTran" EntitySet="bookingTran" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bookingHot_hotel" Association="Self.FK_bookingHot_hotel">
+      <End Role="hotel" EntitySet="hotel" />
+      <End Role="bookingHot" EntitySet="bookingHot" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bookingTran_userDetail" Association="Self.FK_bookingTran_userDetail">
+      <End Role="userDetail" EntitySet="userDetail" />
+      <End Role="bookingTran" EntitySet="bookingTran" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

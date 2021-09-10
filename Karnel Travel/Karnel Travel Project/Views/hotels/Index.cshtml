@@ -1,0 +1,80 @@
+﻿@model IEnumerable<Karnel_Travel_Project.hotel>
+
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<style>
+    #myHot {
+        font-weight: bold;
+    }
+
+    #info {
+        border-bottom: 1px solid white;
+    }
+</style>
+
+<h2>Hotel Info</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-dark" })
+</p>
+<table class="table table-hover table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.hot_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hot_country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hot_charges)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hot_roomAvailable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hot_rating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hot_description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hot_img)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.hot_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hot_country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hot_charges)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hot_roomAvailable)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hot_rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hot_description)
+            </td>
+            <td>
+                <img src="@Url.Content(item.hot_img)" alt="img" width="100" class="img-fluid" />
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.hot_id }, new { @class = "btn btn-outline-secondary btn-sm" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.hot_id }, new { @class = "btn btn-outline-info btn-sm" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.hot_id }, new { @class = "btn btn-outline-danger btn-sm" })
+            </td>
+        </tr>
+    }
+
+</table>

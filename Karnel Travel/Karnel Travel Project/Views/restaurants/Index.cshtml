@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Karnel_Travel_Project.restaurant>
+
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<style>
+    #myRest {
+        font-weight: bold;
+    }
+
+    #info {
+        border-bottom: 1px solid white;
+    }
+</style>
+
+<h2>Restaurant Info</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-dark" })
+</p>
+<table class="table table-hover table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.rest_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rest_country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rest_charges)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rest_rating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rest_description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rest_img)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.rest_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.rest_country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.rest_charges)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.rest_rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.rest_description)
+            </td>
+            <td>
+                <img src="@Url.Content(item.rest_img)" alt="img" width="100" class="img-fluid" />
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.rest_id }, new { @class = "btn btn-outline-secondary btn-sm" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.rest_id }, new { @class = "btn btn-outline-info btn-sm" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.rest_id }, new { @class = "btn btn-outline-danger btn-sm" })
+
+            </td>
+        </tr>
+    }
+
+</table>

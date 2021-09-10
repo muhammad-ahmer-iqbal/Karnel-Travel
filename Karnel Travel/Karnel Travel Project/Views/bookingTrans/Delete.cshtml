@@ -1,0 +1,90 @@
+﻿@model Karnel_Travel_Project.bookingTran
+
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<style>
+    #myBtran {
+        font-weight: bold;
+    }
+
+    #booking {
+        border-bottom: 1px solid white;
+    }
+</style>
+
+<h2>Transport Booking Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.btran_departure)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.btran_departure)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.btran_arrival)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.btran_arrival)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.btran_guests)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.btran_guests)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.btran_seats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.btran_seats)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.btran_contactNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.btran_contactNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.userDetail.u_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userDetail.u_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tranport.tran_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tranport.tran_name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-dark btn-sm" /> |
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-light btn-sm" })
+        </div>
+    }
+</div>

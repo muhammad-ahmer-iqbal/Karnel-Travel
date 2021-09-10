@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="karnelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="adminDetail">
+    <Key>
+      <PropertyRef Name="ad_id" />
+    </Key>
+    <Property Name="ad_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ad_password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bookingHot">
+    <Key>
+      <PropertyRef Name="bhot_id" />
+    </Key>
+    <Property Name="bhot_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="bhot_cust_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="bhot_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="bhot_departure" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="bhot_arrival" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="bhot_guests" Type="Int32" Nullable="false" />
+    <Property Name="bhot_rooms" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="hotel" Relationship="Self.FK_bookingHot_hotel" FromRole="bookingHot" ToRole="hotel" />
+    <Property Name="bhot_contactNo" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="userDetail" Relationship="karnelModel.FK__bookingHo__bhot___3B75D7601" FromRole="bookingHot" ToRole="userDetail" />
+  </EntityType>
+  <EntityType Name="bookingReso">
+    <Key>
+      <PropertyRef Name="breso_id" />
+    </Key>
+    <Property Name="breso_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="breso_cust_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="breso_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="breso_departure" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="breso_arrival" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="breso_guests" Type="Int32" Nullable="false" />
+    <Property Name="breso_rooms" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="resort" Relationship="Self.FK__bookingRe__breso__403A8C7D" FromRole="bookingReso" ToRole="resort" />
+    <Property Name="breso_contactNo" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="userDetail" Relationship="karnelModel.FK__bookingRe__breso__3F4668441" FromRole="bookingReso" ToRole="userDetail" />
+  </EntityType>
+  <EntityType Name="bookingTran">
+    <Key>
+      <PropertyRef Name="btran_id" />
+    </Key>
+    <Property Name="btran_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="btran_cust_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="btran_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="btran_departure" Type="DateTime" Precision="0" Nullable="false" />
+    <Property Name="btran_arrival" Type="DateTime" Precision="0" Nullable="false" />
+    <Property Name="btran_guests" Type="Int32" Nullable="false" />
+    <Property Name="btran_seats" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tranport" Relationship="Self.FK__bookingTr__btran__38996AB5" FromRole="bookingTran" ToRole="tranport" />
+    <Property Name="btran_contactNo" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="userDetail" Relationship="karnelModel.FK_bookingTran_userDetail" FromRole="bookingTran" ToRole="userDetail" />
+  </EntityType>
+  <EntityType Name="contact">
+    <Key>
+      <PropertyRef Name="cont_id" />
+    </Key>
+    <Property Name="cont_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cont_email" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cont_formType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cont_dateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="cont_message" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cont_name" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="cust_id" />
+    </Key>
+    <Property Name="cust_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cust_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cust_contactNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cust_email" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cust_nic" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cust_u_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cust_u_password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="hotel">
+    <Key>
+      <PropertyRef Name="hot_id" />
+    </Key>
+    <Property Name="hot_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="hot_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="hot_country" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="hot_charges" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="hot_roomAvailable" Type="Int32" Nullable="false" />
+    <Property Name="hot_rating" Type="Int32" />
+    <Property Name="hot_description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="hot_img" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="bookingHot" Relationship="Self.FK_bookingHot_hotel" FromRole="hotel" ToRole="bookingHot" />
+  </EntityType>
+  <EntityType Name="resort">
+    <Key>
+      <PropertyRef Name="reso_id" />
+    </Key>
+    <Property Name="reso_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="reso_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="reso_country" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="reso_charges" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="reso_roomAvailable" Type="Int32" Nullable="false" />
+    <Property Name="reso_rating" Type="Int32" />
+    <Property Name="reso_description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="reso_img" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="bookingReso" Relationship="Self.FK__bookingRe__breso__403A8C7D" FromRole="resort" ToRole="bookingReso" />
+  </EntityType>
+  <EntityType Name="restaurant">
+    <Key>
+      <PropertyRef Name="rest_id" />
+    </Key>
+    <Property Name="rest_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rest_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rest_country" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rest_charges" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="rest_rating" Type="Int32" />
+    <Property Name="rest_description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rest_img" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tranport">
+    <Key>
+      <PropertyRef Name="tran_id" />
+    </Key>
+    <Property Name="tran_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tran_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tran_country" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tran_charges" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="tran_seatAvailable" Type="Int32" Nullable="false" />
+    <Property Name="tran_description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tran_img" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="bookingTran" Relationship="Self.FK__bookingTr__btran__38996AB5" FromRole="tranport" ToRole="bookingTran" />
+  </EntityType>
+  <EntityType Name="userDetail">
+    <Key>
+      <PropertyRef Name="u_id" />
+    </Key>
+    <Property Name="u_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="u_password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="u_role" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="bookingTran" Relationship="karnelModel.FK_bookingTran_userDetail" FromRole="userDetail" ToRole="bookingTran" />
+    <NavigationProperty Name="bookingHot" Relationship="karnelModel.FK__bookingHo__bhot___3B75D7601" FromRole="userDetail" ToRole="bookingHot" />
+    <NavigationProperty Name="bookingReso" Relationship="karnelModel.FK__bookingRe__breso__3F4668441" FromRole="userDetail" ToRole="bookingReso" />
+  </EntityType>
+  <Association Name="FK_bookingHot_hotel">
+    <End Role="hotel" Type="Self.hotel" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="bookingHot" Type="Self.bookingHot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hotel">
+        <PropertyRef Name="hot_id" />
+      </Principal>
+      <Dependent Role="bookingHot">
+        <PropertyRef Name="bhot_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bookingRe__breso__403A8C7D">
+    <End Role="resort" Type="Self.resort" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="bookingReso" Type="Self.bookingReso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="resort">
+        <PropertyRef Name="reso_id" />
+      </Principal>
+      <Dependent Role="bookingReso">
+        <PropertyRef Name="breso_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bookingTr__btran__38996AB5">
+    <End Role="tranport" Type="Self.tranport" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="bookingTran" Type="Self.bookingTran" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tranport">
+        <PropertyRef Name="tran_id" />
+      </Principal>
+      <Dependent Role="bookingTran">
+        <PropertyRef Name="btran_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="karnelEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="adminDetail" EntityType="Self.adminDetail" />
+    <EntitySet Name="bookingHot" EntityType="Self.bookingHot" />
+    <EntitySet Name="bookingReso" EntityType="Self.bookingReso" />
+    <EntitySet Name="bookingTran" EntityType="Self.bookingTran" />
+    <EntitySet Name="contact" EntityType="Self.contact" />
+    <EntitySet Name="customer" EntityType="Self.customer" />
+    <EntitySet Name="hotel" EntityType="Self.hotel" />
+    <EntitySet Name="resort" EntityType="Self.resort" />
+    <EntitySet Name="restaurant" EntityType="Self.restaurant" />
+    <EntitySet Name="tranport" EntityType="Self.tranport" />
+    <EntitySet Name="userDetail" EntityType="Self.userDetail" />
+    <AssociationSet Name="FK_bookingHot_hotel" Association="Self.FK_bookingHot_hotel">
+      <End Role="hotel" EntitySet="hotel" />
+      <End Role="bookingHot" EntitySet="bookingHot" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bookingRe__breso__403A8C7D" Association="Self.FK__bookingRe__breso__403A8C7D">
+      <End Role="resort" EntitySet="resort" />
+      <End Role="bookingReso" EntitySet="bookingReso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bookingTr__btran__38996AB5" Association="Self.FK__bookingTr__btran__38996AB5">
+      <End Role="tranport" EntitySet="tranport" />
+      <End Role="bookingTran" EntitySet="bookingTran" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bookingTran_userDetail" Association="karnelModel.FK_bookingTran_userDetail">
+      <End Role="userDetail" EntitySet="userDetail" />
+      <End Role="bookingTran" EntitySet="bookingTran" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bookingHo__bhot___3B75D7601" Association="karnelModel.FK__bookingHo__bhot___3B75D7601">
+      <End Role="userDetail" EntitySet="userDetail" />
+      <End Role="bookingHot" EntitySet="bookingHot" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bookingRe__breso__3F4668441" Association="karnelModel.FK__bookingRe__breso__3F4668441">
+      <End Role="userDetail" EntitySet="userDetail" />
+      <End Role="bookingReso" EntitySet="bookingReso" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK_bookingTran_userDetail">
+    <End Type="karnelModel.userDetail" Role="userDetail" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="karnelModel.bookingTran" Role="bookingTran" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="userDetail">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="bookingTran">
+        <PropertyRef Name="btran_cust_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bookingHo__bhot___3B75D7601">
+    <End Type="karnelModel.userDetail" Role="userDetail" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="karnelModel.bookingHot" Role="bookingHot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="userDetail">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="bookingHot">
+        <PropertyRef Name="bhot_cust_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bookingRe__breso__3F4668441">
+    <End Type="karnelModel.userDetail" Role="userDetail" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="karnelModel.bookingReso" Role="bookingReso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="userDetail">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="bookingReso">
+        <PropertyRef Name="breso_cust_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

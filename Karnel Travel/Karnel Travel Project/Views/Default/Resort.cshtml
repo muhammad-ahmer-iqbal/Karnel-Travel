@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Karnel_Travel_Project.resort>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- resort -->
+<section class="resort-content mt-4">
+    <div class="w-100">
+        <div class="resort-banner">
+            <span class="display-4 mx-auto text-white">
+                <a href="~/Default/Transport" class="text-white">Transportation</a> |
+                <a href="~/Default/Restaurant" class="text-white">Restaurants</a> |
+                <a href="~/Default/Resort" class="text-white font-weight-bold">Resorts</a> |
+                <a href="~/Default/Hotel" class="text-white">Hotels</a>
+            </span>
+        </div>
+    </div>
+    <div class="container">
+        <!-- resort cards -->
+        @foreach (var item in Model)
+        {
+            if (item.reso_roomAvailable != 0)
+            {
+                <div class="card my-3">
+                    <div class="row">
+                        <div class="col-sm-auto">
+                            <img src="@Url.Content(item.reso_img)" alt="..." width="300" height="100%">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h2 class="card-title">
+                                    @Html.DisplayFor(modelItem => item.reso_name)
+                                    @for (int i = 1; i <= (item.reso_rating); i++)
+                                    {
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    }
+                                </h2>
+                                <small class="text-muted">From @Html.DisplayFor(modelItem => item.reso_country)</small>
+                                <p class="card-text">
+                                    @{
+                                        if (item.reso_description.Length > 100)
+                                        {
+                                            var t = item.reso_description.Substring(0, 100);
+                                            @Html.DisplayFor(modelItem => t);
+                                        }
+                                        else
+                                        {
+                                            @Html.DisplayFor(modelItem => item.reso_description);
+                                        }
+                                    }
+                                </p>
+                                <div class="float-right mb-2">
+                                    <button class="btn btn-secondary mx-3" id="item.reso">Read More</button>
+                                    @Html.ActionLink("Book Now", "bookingReso", null, new { @class = "btn btn-outline-success" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+    </div>
+</section>

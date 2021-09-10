@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Karnel_Travel_Project.bookingReso>
+
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<style>
+    #myBreso {
+        font-weight: bold;
+    }
+
+    #booking {
+        border-bottom: 1px solid white;
+    }
+</style>
+
+<h2>Resort Booking Info</h2>
+
+<table class="table table-hover table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.breso_departure)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.breso_arrival)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.breso_guests)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.breso_rooms)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.breso_contactNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.userDetail.u_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.resort.reso_name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.breso_departure)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.breso_arrival)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.breso_guests)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.breso_rooms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.breso_contactNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.userDetail.u_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.resort.reso_name)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.breso_id }, new { @class = "btn btn-outline-info btn-sm" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.breso_id }, new { @class = "btn btn-outline-danger btn-sm" })
+            </td>
+        </tr>
+    }
+
+</table>

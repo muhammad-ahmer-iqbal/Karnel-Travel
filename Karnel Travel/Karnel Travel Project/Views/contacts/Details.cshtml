@@ -1,0 +1,56 @@
+﻿@model Karnel_Travel_Project.contact
+
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<style>
+    #myCont {
+        font-weight: bold;
+        border-bottom: 1px solid white;
+    }
+</style>
+
+<h2>Contact-Us Form Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cont_email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cont_email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cont_formType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cont_formType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cont_dateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cont_dateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cont_message)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cont_message)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cont_id }, new { @class = "btn btn-dark btn-sm" }) |
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-light btn-sm" })S
+</p>

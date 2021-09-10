@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Karnel_Travel_Project.userDetail>
+
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<style>
+    #myUser{
+        font-weight:bold;
+        border-bottom:1px solid white;
+    }
+</style>
+
+<h2>User Info</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-dark" })
+</p>
+<table class="table table-hover table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.u_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.u_password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.u_role)
+        </th>
+        <th>@ViewBag.data</th>
+    </tr>
+    
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.u_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.u_password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.u_role)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.u_id }, new { @class = "btn btn-outline-secondary btn-sm" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.u_id }, new { @class = "btn btn-outline-info btn-sm" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.u_id }, new { @class = "btn btn-outline-danger btn-sm" })
+            </td>
+        </tr>
+    }
+
+</table>

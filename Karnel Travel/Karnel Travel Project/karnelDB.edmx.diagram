@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="67211b986af944b4b532ddcd5e71f300" Name="Diagram1" ZoomLevel="62" DisplayType="true">
+        <EntityTypeShape EntityType="karnelModel.adminDetail" Width="1.75" PointX="9.375" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="karnelModel.bookingHot" Width="2.125" PointX="3.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="karnelModel.bookingReso" Width="2.125" PointX="1.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="karnelModel.bookingTran" Width="2.125" PointX="1.375" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="karnelModel.contact" Width="2.25" PointX="9.375" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="karnelModel.customer" Width="1.5" PointX="6.375" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="karnelModel.hotel" Width="2" PointX="6.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="karnelModel.resort" Width="2" PointX="4" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="karnelModel.restaurant" Width="1.875" PointX="6.875" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="karnelModel.tranport" Width="2" PointX="4" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="karnelModel.userDetail" Width="1.625" PointX="1.25" PointY="4.125" IsExpanded="true" />
+        <AssociationConnector Association="karnelModel.FK_bookingHot_hotel" ManuallyRouted="false" />
+        <AssociationConnector Association="karnelModel.FK__bookingRe__breso__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="karnelModel.FK__bookingTr__btran__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="karnelModel.FK_bookingTran_userDetail" />
+        <AssociationConnector Association="karnelModel.FK__bookingHo__bhot___3B75D7601" />
+        <AssociationConnector Association="karnelModel.FK__bookingRe__breso__3F4668441" ManuallyRouted="false" >
+        </AssociationConnector>
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

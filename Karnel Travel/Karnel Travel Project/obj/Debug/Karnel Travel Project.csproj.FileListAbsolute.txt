@@ -1,0 +1,152 @@
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\Karnel Travel Project.dll.config
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\Karnel Travel Project.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\Karnel Travel Project.pdb
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\csc.exe
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\csc.exe.config
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\csc.rsp
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\csi.exe
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\csi.exe.config
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\csi.rsp
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.Managed.Core.targets
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.AppContext.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Collections.Immutable.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Console.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Globalization.Calendars.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.IO.Compression.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.IO.FileSystem.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Net.Http.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Net.Sockets.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Reflection.Metadata.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.ValueTuple.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Xml.XmlDocument.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Xml.XPath.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\vbc.exe
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\vbc.exe.config
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\vbc.rsp
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\VBCSCompiler.exe
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\VBCSCompiler.exe.config
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\EntityFramework.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\EntityFramework.SqlServer.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\Microsoft.Web.Infrastructure.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Helpers.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Mvc.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Razor.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Webpages.Deployment.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Webpages.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Webpages.Razor.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\EntityFramework.xml
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\EntityFramework.SqlServer.xml
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Razor.xml
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Webpages.xml
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Webpages.Deployment.xml
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Webpages.Razor.xml
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Helpers.xml
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Mvc.xml
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\obj\Debug\Karnel Travel Project.csproj.CoreCompileInputs.cache
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\obj\Debug\Karnel Travel Project.csproj.CopyComplete
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\obj\Debug\Karnel Travel Project.dll
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\obj\Debug\Karnel Travel Project.pdb
+G:\APT\Diploma in Information Systems Management (DISM)\Kernal Travel Project\Karnel Travel\Karnel Travel Project\obj\Debug\Karnel Travel Project.csprojAssemblyReference.cache
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\Karnel Travel Project.dll.config
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\Karnel Travel Project.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\Karnel Travel Project.pdb
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\csc.exe
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\csc.exe.config
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\csc.rsp
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\csi.exe
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\csi.exe.config
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\csi.rsp
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.AppContext.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Collections.Immutable.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Console.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Globalization.Calendars.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.IO.Compression.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.IO.FileSystem.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Net.Http.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Net.Sockets.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Reflection.Metadata.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.ValueTuple.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Xml.XPath.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\vbc.exe
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\vbc.exe.config
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\vbc.rsp
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\VBCSCompiler.exe
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\roslyn\VBCSCompiler.exe.config
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\EntityFramework.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\EntityFramework.SqlServer.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\Microsoft.Web.Infrastructure.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Helpers.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Mvc.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Razor.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Webpages.Deployment.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Webpages.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Webpages.Razor.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\EntityFramework.xml
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\EntityFramework.SqlServer.xml
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Razor.xml
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Webpages.xml
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Webpages.Deployment.xml
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Webpages.Razor.xml
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Helpers.xml
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\System.Web.Mvc.xml
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\obj\Debug\Karnel Travel Project.csproj.AssemblyReference.cache
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\obj\Debug\Karnel Travel Project.csproj.CoreCompileInputs.cache
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\obj\Debug\Karnel Travel Project.csproj.CopyComplete
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\obj\Debug\Karnel Travel Project.dll
+D:\Kernal Travel Project\Karnel Travel\Karnel Travel Project\obj\Debug\Karnel Travel Project.pdb

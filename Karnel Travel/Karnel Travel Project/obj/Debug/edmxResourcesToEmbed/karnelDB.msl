@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="karnelModelStoreContainer" CdmEntityContainer="karnelEntities1">
+    <EntitySetMapping Name="adminDetail">
+      <EntityTypeMapping TypeName="karnelModel.adminDetail">
+        <MappingFragment StoreEntitySet="adminDetail">
+          <ScalarProperty Name="ad_id" ColumnName="ad_id" />
+          <ScalarProperty Name="ad_password" ColumnName="ad_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bookingHot">
+      <EntityTypeMapping TypeName="karnelModel.bookingHot">
+        <MappingFragment StoreEntitySet="bookingHot">
+          <ScalarProperty Name="bhot_contactNo" ColumnName="bhot_contactNo" />
+          <ScalarProperty Name="bhot_id" ColumnName="bhot_id" />
+          <ScalarProperty Name="bhot_cust_id" ColumnName="bhot_cust_id" />
+          <ScalarProperty Name="bhot_name" ColumnName="bhot_name" />
+          <ScalarProperty Name="bhot_departure" ColumnName="bhot_departure" />
+          <ScalarProperty Name="bhot_arrival" ColumnName="bhot_arrival" />
+          <ScalarProperty Name="bhot_guests" ColumnName="bhot_guests" />
+          <ScalarProperty Name="bhot_rooms" ColumnName="bhot_rooms" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bookingReso">
+      <EntityTypeMapping TypeName="karnelModel.bookingReso">
+        <MappingFragment StoreEntitySet="bookingReso">
+          <ScalarProperty Name="breso_contactNo" ColumnName="breso_contactNo" />
+          <ScalarProperty Name="breso_id" ColumnName="breso_id" />
+          <ScalarProperty Name="breso_cust_id" ColumnName="breso_cust_id" />
+          <ScalarProperty Name="breso_name" ColumnName="breso_name" />
+          <ScalarProperty Name="breso_departure" ColumnName="breso_departure" />
+          <ScalarProperty Name="breso_arrival" ColumnName="breso_arrival" />
+          <ScalarProperty Name="breso_guests" ColumnName="breso_guests" />
+          <ScalarProperty Name="breso_rooms" ColumnName="breso_rooms" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bookingTran">
+      <EntityTypeMapping TypeName="karnelModel.bookingTran">
+        <MappingFragment StoreEntitySet="bookingTran">
+          <ScalarProperty Name="btran_contactNo" ColumnName="btran_contactNo" />
+          <ScalarProperty Name="btran_id" ColumnName="btran_id" />
+          <ScalarProperty Name="btran_cust_id" ColumnName="btran_cust_id" />
+          <ScalarProperty Name="btran_name" ColumnName="btran_name" />
+          <ScalarProperty Name="btran_departure" ColumnName="btran_departure" />
+          <ScalarProperty Name="btran_arrival" ColumnName="btran_arrival" />
+          <ScalarProperty Name="btran_guests" ColumnName="btran_guests" />
+          <ScalarProperty Name="btran_seats" ColumnName="btran_seats" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contact">
+      <EntityTypeMapping TypeName="karnelModel.contact">
+        <MappingFragment StoreEntitySet="contact">
+          <ScalarProperty Name="cont_name" ColumnName="cont_name" />
+          <ScalarProperty Name="cont_id" ColumnName="cont_id" />
+          <ScalarProperty Name="cont_email" ColumnName="cont_email" />
+          <ScalarProperty Name="cont_formType" ColumnName="cont_formType" />
+          <ScalarProperty Name="cont_dateTime" ColumnName="cont_dateTime" />
+          <ScalarProperty Name="cont_message" ColumnName="cont_message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customer">
+      <EntityTypeMapping TypeName="karnelModel.customer">
+        <MappingFragment StoreEntitySet="customer">
+          <ScalarProperty Name="cust_u_password" ColumnName="cust_u_password" />
+          <ScalarProperty Name="cust_u_id" ColumnName="cust_u_id" />
+          <ScalarProperty Name="cust_id" ColumnName="cust_id" />
+          <ScalarProperty Name="cust_name" ColumnName="cust_name" />
+          <ScalarProperty Name="cust_contactNo" ColumnName="cust_contactNo" />
+          <ScalarProperty Name="cust_email" ColumnName="cust_email" />
+          <ScalarProperty Name="cust_nic" ColumnName="cust_nic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hotel">
+      <EntityTypeMapping TypeName="karnelModel.hotel">
+        <MappingFragment StoreEntitySet="hotel">
+          <ScalarProperty Name="hot_id" ColumnName="hot_id" />
+          <ScalarProperty Name="hot_name" ColumnName="hot_name" />
+          <ScalarProperty Name="hot_country" ColumnName="hot_country" />
+          <ScalarProperty Name="hot_charges" ColumnName="hot_charges" />
+          <ScalarProperty Name="hot_roomAvailable" ColumnName="hot_roomAvailable" />
+          <ScalarProperty Name="hot_rating" ColumnName="hot_rating" />
+          <ScalarProperty Name="hot_description" ColumnName="hot_description" />
+          <ScalarProperty Name="hot_img" ColumnName="hot_img" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="resort">
+      <EntityTypeMapping TypeName="karnelModel.resort">
+        <MappingFragment StoreEntitySet="resort">
+          <ScalarProperty Name="reso_id" ColumnName="reso_id" />
+          <ScalarProperty Name="reso_name" ColumnName="reso_name" />
+          <ScalarProperty Name="reso_country" ColumnName="reso_country" />
+          <ScalarProperty Name="reso_charges" ColumnName="reso_charges" />
+          <ScalarProperty Name="reso_roomAvailable" ColumnName="reso_roomAvailable" />
+          <ScalarProperty Name="reso_rating" ColumnName="reso_rating" />
+          <ScalarProperty Name="reso_description" ColumnName="reso_description" />
+          <ScalarProperty Name="reso_img" ColumnName="reso_img" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="restaurant">
+      <EntityTypeMapping TypeName="karnelModel.restaurant">
+        <MappingFragment StoreEntitySet="restaurant">
+          <ScalarProperty Name="rest_id" ColumnName="rest_id" />
+          <ScalarProperty Name="rest_name" ColumnName="rest_name" />
+          <ScalarProperty Name="rest_country" ColumnName="rest_country" />
+          <ScalarProperty Name="rest_charges" ColumnName="rest_charges" />
+          <ScalarProperty Name="rest_rating" ColumnName="rest_rating" />
+          <ScalarProperty Name="rest_description" ColumnName="rest_description" />
+          <ScalarProperty Name="rest_img" ColumnName="rest_img" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tranport">
+      <EntityTypeMapping TypeName="karnelModel.tranport">
+        <MappingFragment StoreEntitySet="tranport">
+          <ScalarProperty Name="tran_id" ColumnName="tran_id" />
+          <ScalarProperty Name="tran_name" ColumnName="tran_name" />
+          <ScalarProperty Name="tran_country" ColumnName="tran_country" />
+          <ScalarProperty Name="tran_charges" ColumnName="tran_charges" />
+          <ScalarProperty Name="tran_seatAvailable" ColumnName="tran_seatAvailable" />
+          <ScalarProperty Name="tran_description" ColumnName="tran_description" />
+          <ScalarProperty Name="tran_img" ColumnName="tran_img" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userDetail">
+      <EntityTypeMapping TypeName="karnelModel.userDetail">
+        <MappingFragment StoreEntitySet="userDetail">
+          <ScalarProperty Name="u_id" ColumnName="u_id" />
+          <ScalarProperty Name="u_password" ColumnName="u_password" />
+          <ScalarProperty Name="u_role" ColumnName="u_role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

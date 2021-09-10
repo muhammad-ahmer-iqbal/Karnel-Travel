@@ -1,0 +1,83 @@
+﻿@model Karnel_Travel_Project.bookingHot
+
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<style>
+    #myBhot {
+        font-weight: bold;
+    }
+
+    #booking {
+        border-bottom: 1px solid white;
+    }
+</style>
+
+<h2>Hotel Booking Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.bhot_departure)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bhot_departure)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bhot_arrival)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bhot_arrival)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bhot_guests)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bhot_guests)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bhot_rooms)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bhot_rooms)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bhot_contactNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bhot_contactNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.userDetail.u_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userDetail.u_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hotel.hot_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hotel.hot_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.bhot_id }, new { @class = "btn btn-dark btn-sm" }) |
+    @Html.ActionLink("Back to List", "Index",null, new { @class = "btn btn-light btn-sm" })
+</p>

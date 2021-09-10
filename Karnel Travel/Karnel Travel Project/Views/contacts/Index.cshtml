@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Karnel_Travel_Project.contact>
+
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<style>
+    #myCont{
+        font-weight:bold;
+        border-bottom:1px solid white;
+    }
+</style>
+
+<h2>Contact-Us Forms</h2>
+
+<table class="table table-hover table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cont_email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cont_formType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cont_dateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cont_message)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.cont_email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cont_formType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cont_dateTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cont_message)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.cont_id }, new { @class = "btn btn-outline-info btn-sm" }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.cont_id }, new { @class = "btn btn-outline-danger btn-sm" })
+        </td>
+    </tr>
+}
+
+</table>

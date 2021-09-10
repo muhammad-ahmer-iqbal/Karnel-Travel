@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Karnel_Travel_Project.tranport>
+
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<style>
+    #myTran {
+        font-weight: bold;
+    }
+
+    #info {
+        border-bottom: 1px solid white;
+    }
+</style>
+
+<h2>Transport Info</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-dark" })
+</p>
+<table class="table table-hover table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tran_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tran_country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tran_charges)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tran_seatAvailable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tran_description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tran_img)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.tran_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tran_country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tran_charges)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tran_seatAvailable)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tran_description)
+            </td>
+            <td>
+                <img src="@Url.Content(item.tran_img)" alt="img" width="100" class="img-fluid" />
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.tran_id }, new { @class = "btn btn-outline-secondary btn-sm" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.tran_id }, new { @class = "btn btn-outline-info btn-sm" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.tran_id }, new { @class = "btn btn-outline-danger btn-sm" })
+            </td>
+        </tr>
+    }
+
+</table>

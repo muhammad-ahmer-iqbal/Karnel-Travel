@@ -1,0 +1,82 @@
+﻿@model Karnel_Travel_Project.resort
+
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<style>
+    #myReso {
+        font-weight: bold;
+    }
+
+    #info {
+        border-bottom: 1px solid white;
+    }
+</style>
+
+<h2>Delete Resort</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.reso_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reso_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reso_country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reso_country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reso_charges)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reso_charges)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reso_roomAvailable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reso_roomAvailable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reso_rating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reso_rating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reso_description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reso_description)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-dark btn-sm" /> |
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-light btn-sm" })
+        </div>
+    }
+</div>

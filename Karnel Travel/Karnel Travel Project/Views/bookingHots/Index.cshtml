@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Karnel_Travel_Project.bookingHot>
+
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<style>
+    #myBhot {
+        font-weight: bold;
+    }
+
+    #booking {
+        border-bottom: 1px solid white;
+    }
+</style>
+
+<h2>Hotel Booking Info</h2>
+
+<table class="table table-hover table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.bhot_departure)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bhot_arrival)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bhot_guests)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bhot_rooms)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bhot_contactNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.userDetail.u_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hotel.hot_name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.bhot_departure)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bhot_arrival)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bhot_guests)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bhot_rooms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bhot_contactNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.userDetail.u_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hotel.hot_name)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.bhot_id }, new { @class = "btn btn-outline-info btn-sm" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.bhot_id }, new { @class = "btn btn-outline-danger btn-sm" })
+            </td>
+        </tr>
+    }
+
+</table>

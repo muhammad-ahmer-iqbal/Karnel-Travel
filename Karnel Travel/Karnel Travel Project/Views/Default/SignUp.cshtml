@@ -1,0 +1,83 @@
+﻿@model Karnel_Travel_Project.customer
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+
+<section class="form-signup my-auto">
+    <div class="container py-3">
+        <div class="formHeading">
+            <h2 class="text-center display-1">Create your account</h2>
+        </div>
+        <hr />
+        <div class="formSection my-5 mx-auto">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+            <form>
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-row mb-3">
+                    @Html.LabelFor(model => model.cust_name, "Customer Name", htmlAttributes: new { @class = "control-label col-md-12" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.cust_name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter your full name" } })
+                        @Html.ValidationMessageFor(model => model.cust_name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-row mb-3">
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.cust_contactNo, "Contact No.", htmlAttributes: new { @class = "control-label" })
+                        <div class="input-group">
+                            @Html.EditorFor(model => model.cust_contactNo, new { htmlAttributes = new { @class = "form-control", @placeholder = "03XX-XXXXXXX" } })
+                            @Html.ValidationMessageFor(model => model.cust_contactNo, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.cust_email, "Email Address", htmlAttributes: new { @class = "control-label" })
+                        <div class="input-group">
+                            @Html.EditorFor(model => model.cust_email, new { htmlAttributes = new { @class = "form-control", @placeholder = "abc@def.com" } })
+                            @Html.ValidationMessageFor(model => model.cust_email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row mb-3">
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.cust_u_id, "User ID", htmlAttributes: new { @class = "control-label" })
+                        <div class="input-group">
+                            @Html.EditorFor(model => model.cust_u_id, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.cust_u_id, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.cust_u_password, "User Password", htmlAttributes: new { @class = "control-label" })
+                        <div class="input-group">
+                            @Html.PasswordFor(model => model.cust_u_password, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.cust_u_password, "", new { @class = "text-danger" })
+                        </div>
+                        @ViewBag.uId
+                    </div>
+                </div>
+
+                <div class="form-row mb-3">
+                    @Html.LabelFor(model => model.cust_nic, "N.I.C.", htmlAttributes: new { @class = "control-label col-md-12" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.cust_nic, new { htmlAttributes = new { @class = "form-control", @placeholder = "XXXX-XXXXXXX-X" } })
+                        @Html.ValidationMessageFor(model => model.cust_nic, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Sign Up" class="btn btn-dark btn-block btn-lg" />
+                </div>
+            </form>
+            }
+        </div>
+    </div>
+</section>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
